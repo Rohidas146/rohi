@@ -17,14 +17,14 @@ public class DragAndDrop {
 		//System.setProperty("webdriver.chrome.driver", "/home/redbytes/Desktop/selenium/chromedriver");
 		System.setProperty("webdriver.chrome.driver", "E:\\ROHDAS PATIL\\WorkSpace\\selenium\\Resources\\chromedriver.exe");
 		//When you create object then automatically browser will lauch
-		ChromeDriver driver=new ChromeDriver();
-		driver.get("https://demoqa.com/droppable");
-		Actions action=new Actions(driver);
-		WebElement source=driver.findElement(By.id("draggable"));
-		WebElement target=driver.findElement(By.id("droppable"));
+		ChromeDriver driver1=new ChromeDriver();
+		driver1.get("https://demoqa.com/droppable");
+		Actions action=new Actions(driver1);
+		WebElement source=driver1.findElement(By.id("draggable"));
+		WebElement target=driver1.findElement(By.id("droppable"));
 		action.dragAndDrop(source, target).perform();
 		//driver.manage().timeouts().implicitlyWait(10,TimeUnit.MILLISECONDS);
-		driver.manage().timeouts().implicitlyWait(Duration.ofMillis(10));
+		driver1.manage().timeouts().implicitlyWait(Duration.ofMillis(10));
 		
 		
 		//Step1 --Webdriver wait class object --> driver wait conditon
